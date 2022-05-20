@@ -25,4 +25,19 @@ class Instituicoes extends Model
     {
         return $this->institutions;
     }
+
+    public function filterInstitutions(array $filter)
+    {
+        $response = array();
+        
+        foreach ($filter as $f) {
+            $key = array_search(strtoupper($f), array_column($this->institutions, 'chave'));
+            if ($key !== false) {
+                array_push($response, $this->institutions[$key]);
+            }
+        }
+
+        return $response;
+    }
+
 }
