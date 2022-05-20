@@ -25,4 +25,18 @@ class Convenios extends Model
     {
         return $this->covenants;
     }
+
+    public function filterCovenants(array $filter)
+    {
+        $response = array();
+        
+        foreach ($filter as $f) {
+            $key = array_search(strtoupper($f), array_column($this->covenants, 'chave'));
+            if ($key !== false) {
+                array_push($response, $this->covenants[$key]);
+            }
+        }
+
+        return $response;
+    }
 }
