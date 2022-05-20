@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\ConveniosController;
+use App\Http\Controllers\InstituicoesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/institutions', [InstituicoesController::class, 'index']);
+Route::get('/covenants',    [ConveniosController::class, 'index']);
