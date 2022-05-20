@@ -1,6 +1,6 @@
 ## Sobre o projeto
 
-O projeto tem por finalidade simular emprestimos através de instituições e convênios.
+O projeto simula empréstimos através de instituições e convênios.
 
 ## Executando o projeto
 
