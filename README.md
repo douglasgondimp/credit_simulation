@@ -10,7 +10,7 @@ O projeto tem por finalidade simular emprestimos através de instituições e co
 
 3) Utilize o Insomnia para realizar as consultas.
 
-3.1) Para a requisição POST, o envio dos dados são em formato JSON com os campos:
+Para a requisição POST, o envio dos dados são em formato JSON com os campos:
 * `valor_emprestimo`: obrigatório | float;
 * `instituicoes`: opcional | array;
 * `convenios`: opcional | array;
