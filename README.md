@@ -9,3 +9,9 @@ O projeto tem por finalidade simular emprestimos através de instituições e co
 2) Acesse pelo terminal a pasta do projeto e execute o comando `php artisan serve` para executar o servidor de desenvolvimento PHP do Laravel.
 
 3) Utilize o Insomnia para realizar as consultas.
+
+3.1) Para a requisição POST, o envio dos dados são em formato JSON com os campos:
+* `valor_emprestimo`: obrigatorio | float;
+* `instituicoes`: opcional | array;
+* `convenios`: opcional | array;
+* `parcela`: opcional | inteiro; 
